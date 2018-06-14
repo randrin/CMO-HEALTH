@@ -1,0 +1,125 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+	<h:head>
+		<script name="jquery/jquery.js" library="primefaces"></script>
+		<title>Registration Patients</title>
+	</h:head>
+	<h:form>
+		<p:growl id="messages"></p:growl>
+		<p:wizard>
+			<p:tab id="infoPersonnel" title="Informations Personnelles">
+	            <p:panel header="Détails Informations">
+	                <p:messages />
+	                <h:panelGrid columns="2" columnClasses="ui-grid-col-8,ui-grid-col-4" layout="grid" styleClass="ui-panelgrid-blank">
+	                    <h:outputText value="Nom Patient *" />
+	                    <p:inputText value="#{patientBeans.patient.nomPatient}" required="true" label="Nom"/>
+	 
+	                    <h:outputText value="Prènom Patient " />
+	                    <p:inputText value="#{patientBeans.patient.prenomPatient}" required="false" label="Prenom"/>
+	 
+	 					<p:outputLabel for="sexe" value="Sexe Patient "></p:outputLabel>
+						<p:selectOneMenu id="sexe" value="#{patientBeans.patient.sexePatient}">
+							<f:selectItem itemLabel="M" itemValue="M" />
+				            <f:selectItem itemLabel="F" itemValue="F" />
+						</p:selectOneMenu>
+						
+	                    <p:outputLabel for="french" value="Date Naissance Patient "></p:outputLabel>
+						<p:calendar id="french" required="true" value="#{patientBeans.patient.dateNaisPatient}" locale="fr" effect="slideDown" navigator="true" pattern="dd/MM/yy" yearRange="1900:2018"></p:calendar>
+						
+						<p:outputLabel value="Age Patient "></p:outputLabel>
+						<p:inputText value="#{patientBeans.patient.agePatient}" label="Age"/>
+	                </h:panelGrid>
+	            </p:panel>
+	        </p:tab>
+	        <p:tab id="address" title="Addresses Patient" >
+	            <p:panel header="Détails Addresses">
+	                <p:messages />
+	                <h:panelGrid columns="2" columnClasses="ui-grid-col-8,ui-grid-col-4" layout="grid" styleClass="ui-panelgrid-blank">
+	                    <h:outputText value="Ville *" />
+	                    <p:inputText value="#{patientBeans.patient.addressePatient}" required="true" label="Ville" />
+	 
+	                    <h:outputText value="Code Postal " />
+	                    <p:inputText value="#{patientBeans.patient.codePostPatient}" label="Postale" />
+	 
+	                    <h:outputText value="Domicile *" />
+	                    <p:inputText value="#{patientBeans.patient.domicilePatient}" required="true" label="Domicile" />
+	                
+	                	<h:outputText value="Autres infos " />
+	                	<p:inputText value="#{patientBeans.patient.infoSupplPatient}" />
+	                </h:panelGrid>
+	            </p:panel>
+	        </p:tab>
+	        <p:tab id="contact" title="Contacts Patient">
+	            <p:panel header="Détails Contact">
+	                <p:messages />
+	                <h:panelGrid columns="2" columnClasses="ui-grid-col-8,ui-grid-col-4" layout="grid" styleClass="ui-panelgrid-blank">
+	                    <h:outputText value="Email " />
+	                    <p:inputText value="#{patientBeans.patient.emailPatient}" label="Email"/>
+	 
+	                    <h:outputText value="Cellulaire *" />
+	                    <p:inputText value="#{patientBeans.patient.numTelPatient}" label="Cellulaire" required="true"/>
+	                    
+	                    <h:outputText value="Fixe " />
+	                    <p:inputText value="#{patientBeans.patient.numFixePatient}" label="Fixe" />
+	                </h:panelGrid>
+	            </p:panel>
+	        </p:tab>
+	        <p:tab id="confirm" title="Confirmation">
+	            <p:panel header="Confirmation">
+	                <h:panelGrid id="confirmation" columns="3" columnClasses="grid,grid,grid">
+	                    <h:panelGrid columns="2" columnClasses="label, value">
+	                        <h:outputText value="Nom Patient: " />
+	                        <h:outputText value="#{patientBeans.patient.nomPatient}" styleClass="outputLabel"/>
+	 
+	                        <h:outputText value="Prènom Patient: " />
+	                        <h:outputText value="#{patientBeans.patient.prenomPatient}" styleClass="outputLabel"/>
+	 						
+	 						<h:outputText value="Sexe Patient: " />
+	                        <h:outputText value="#{patientBeans.patient.sexePatient}" styleClass="outputLabel"/>
+	                        
+	                        <h:outputText value="Date Naissance: " />
+	                        <h:outputText value="#{patientBeans.patient.dateNaisPatient}" styleClass="outputLabel"/>
+	                        
+	                        <h:outputText value="Age Patient: " />
+	                        <h:outputText value="#{patientBeans.patient.agePatient}" styleClass="outputLabel"/>
+	                    </h:panelGrid>
+	 
+	                    <h:panelGrid columns="2" columnClasses="label, value">
+	                        <h:outputText value="Ville: " />
+	                        <h:outputText value="#{patientBeans.patient.addressePatient}" styleClass="outputLabel"/>
+	 
+	                        <h:outputText value="Code Postal: " />
+	                        <h:outputText value="#{patientBeans.patient.codePostPatient}" styleClass="outputLabel"/>
+	 
+	                        <h:outputText value="Domicile: " />
+	                        <h:outputText value="#{patientBeans.patient.domicilePatient}" styleClass="outputLabel"/>
+	                        
+	                        <h:outputText value="Infos Supplémenataires: " />
+	                        <h:outputText value="#{patientBeans.patient.infoSupplPatient}" styleClass="outputLabel"/>
+	                    </h:panelGrid>
+	 
+	                    <h:panelGrid columns="2" columnClasses="label, value">
+	                        <h:outputText value="Email: " />
+	                        <h:outputText value="#{patientBeans.patient.emailPatient}" styleClass="outputLabel"/>
+	 
+	                        <h:outputText value="Cellulaire " />
+	                        <h:outputText value="#{patientBeans.patient.numTelPatient}" styleClass="outputLabel"/>
+	 
+	                        <h:outputText value="Fixe: " />
+	                        <h:outputText value="#{patientBeans.patient.numFixePatient}" styleClass="outputLabel"/>
+	 
+	                        <h:outputText />
+	                        <h:outputText />
+	                    </h:panelGrid>
+	                </h:panelGrid>
+	                <br />
+	                <p:commandButton value="Enregistrer" action="#{patientBeans.registrationPatient}" icon="ui-icon-check" update="messages" />
+	            	<br />
+	            </p:panel>
+	        </p:tab>
+		</p:wizard>
+	</h:form>
+</html>

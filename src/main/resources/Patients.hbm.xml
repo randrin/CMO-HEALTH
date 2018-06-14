@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+<hibernate-mapping>
+	<class name="com.cmo.health.model.Patients" table="patients">
+		<id name="idPatient" column="id_patient" type="long">
+			<generator class="native" />
+		</id>
+		<property name="nomPatient" column="nom_patient" type="string"/>
+		<property name="prenomPatient" column="prenom_patient" type="string"/>
+		<property name="dateNaisPatient" column="date_nais_patient" type="date"/>
+		<property name="agePatient" column="age_patient" type="integer"/>
+	</class>
+</hibernate-mapping>
