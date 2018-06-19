@@ -1,0 +1,10 @@
+.ui-layout-unit {
+	border: .1em solid blue;
+}
+.textBold {
+	font-style: italic;
+}
+
+.headerText {
+	font-weight: bold;
+}

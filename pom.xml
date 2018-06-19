@@ -7,6 +7,7 @@
   <name>CMO-HEALTH</name>
   <description>Application de Prise de soins des patients souffrant du mal des yeux</description>
 	<build>
+	<finalName>CMO-HEALTH</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -81,7 +82,7 @@
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
-			<version>4.3.6.Final</version>
+			<version>5.2.10.Final</version>
 		</dependency>
 		<!-- MySQL driver connector library -->
 		<dependency>
@@ -119,6 +120,18 @@
 			<groupId>org.eclipse.persistence</groupId>
 			<artifactId>eclipselink</artifactId>
 			<version>2.5.0-RC1</version>
+		</dependency>
+		<!-- Logger Informations -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+		<!-- dom4j from entityManager -->
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>1.6.1</version>
 		</dependency>
 	</dependencies>
 </project>

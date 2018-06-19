@@ -1,0 +1,32 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+	<h:head>
+		<link id="favicon" rel="shortcut icon" href="../resources/icons/cmoHealth.jpg"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<script name="jquery/jquery.js" library="primefaces"></script>
+		<h:outputStylesheet library="css" name="cssLayout.css"/>
+		<h:outputStylesheet library="css" name="colorStyle.css"/>
+		<title>CMO-HEALTH | Login Administrateurs</title>
+	</h:head>
+	<h:body style="background-color:blue;">         
+		<div class="container-fluid" style="top:35%; left: 35%; position: absolute;">
+	        <h:panelGrid>
+	        	<p:growl showDetail="true" id="errorLogin"></p:growl>
+	        	<h:form id="login">
+	            	<p:panelGrid columns="2" >
+	            		<f:facet name="header">LOGIN</f:facet>
+	            		<h:outputText value="Nom Admin" />
+	            		<p:inputText value="#{loginBeans.nomAdmin}" />
+	            		<h:outputText value="Password Admin" />
+	            		<p:password value="#{loginBeans.pwdAdmin}" />
+	            		<br />
+	            		<p:commandButton action="#{loginBeans.loginConnection}" value="Login" icon="ui-icon-check" update="errorLogin"/>
+	            	</p:panelGrid>
+	         </h:form>
+	        </h:panelGrid>
+		</div>
+	</h:body>
+</html>

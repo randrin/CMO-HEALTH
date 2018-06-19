@@ -1,0 +1,33 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+	<h:head>
+		<link rel="icon" type="image/gif/png" href="./icons/logo.png"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<script name="jquery/jquery.js" library="primefaces"></script>
+		<h:outputStylesheet library="css" name="cssLayout.css"/>
+		<h:outputStylesheet library="css" name="colorStyle.css"/>
+		<title>CMO-HEALTH | Dashboard Sections</title>
+	</h:head>
+	<h:body>
+		<p:layout fullPage="true">
+		    <p:layoutUnit position="north" size="100" resizable="false" closable="true" collapsible="true">
+		        <ui:include src="/templates/header.xhtml" />
+		    </p:layoutUnit>
+		 
+		    <p:layoutUnit position="south" size="100" resizable="false" closable="true" collapsible="true">
+		        <ui:include src="/templates/footer.xhtml" />
+		    </p:layoutUnit>
+		 
+		    <p:layoutUnit position="west" size="200" header="Menu" style="height: 50px;" resizable="false" closable="false" collapsible="true">
+		        <h:outputLabel value="Menu section" />
+		    </p:layoutUnit>
+		 
+		    <p:layoutUnit position="center">
+				<h:outputLabel value="Content section" />
+		    </p:layoutUnit>
+		</p:layout>
+	</h:body>
+</html>

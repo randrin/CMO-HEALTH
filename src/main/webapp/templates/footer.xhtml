@@ -1,0 +1,168 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+		
+	<style>
+		.ui-g-12 {
+			float: left;
+			box-sizing: border-box;
+			padding: .1em;
+		}
+		.ui-notificationbar {
+			height: 800px;
+		}
+	</style>
+
+	<h:body>
+		<div class="ui-g">
+		    <div class="ui-g-4">
+		    	<a href="http://randrinnzeukang.com/" target="_blank" title="Allez sur le site">
+		    		<p:graphicImage name="icons/logo.png" width="100" style="display: block; margin: 0px auto;"/>
+		    	</a> 
+		    </div>
+		    <div class="ui-g-8 ui-g-nopad">
+		        <div class="ui-g-3">
+		        	<p:notificationBar position="top" effect="slide" styleClass="top" widgetVar="barCentre" autoDisplay="false">
+					    <h:outputText value="Centre C.M.O Health" style="font-size:36px; color:blue;" />
+					  		<p style="text-align:justify; padding: 30px;">Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here</p>
+					    <p:commandButton value="Fermer" onclick="PF('barCentre').hide()" type="button" icon="ui-icon-arrow-1-n" />
+					</p:notificationBar>
+					<p:commandLink value="Centre C.M.O HEALTH" onclick="PF('barCentre').show()" /> <span style="padding-left: 35px;">|</span>
+		        </div>
+		        <div class="ui-g-3">
+		        	<p:notificationBar position="top" effect="slide" styleClass="top" widgetVar="barTermes" autoDisplay="false">
+					    <h:outputText value="Termes et Conditions" style="font-size:36px; color:blue;" />
+					  		<p style="text-align:justify; padding: 30px;">Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here</p>
+					    <p:commandButton value="Fermer" onclick="PF('barTermes').hide()" type="button" icon="ui-icon-arrow-1-n" />
+					</p:notificationBar>
+					<p:commandLink value="Termes et Conditions" onclick="PF('barTermes').show()" /> <span style="padding-left: 35px;">|</span>
+		        </div>
+		        <div class="ui-g-3">
+		        	<p:notificationBar position="top" effect="slide" styleClass="top" widgetVar="barFAQs" autoDisplay="false">
+					    <h:outputText value="FAQs" style="font-size:36px; color:blue;" />
+					  		<p style="text-align:justify; padding: 30px;">Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here</p>
+					    <p:commandButton value="Fermer" onclick="PF('barFAQs').hide()" type="button" icon="ui-icon-arrow-1-n" />
+					</p:notificationBar>
+					<p:commandLink value="FAQs" onclick="PF('barFAQs').show()" /> <span style="padding-left: 35px;">|</span>
+		        </div>
+		        <div class="ui-g-3">
+		        	<p:notificationBar position="top" effect="slide" styleClass="top" widgetVar="barPrivacy" autoDisplay="false">
+					    <h:outputText value="Privacy" style="font-size:36px; color:blue;" />
+					  		<p style="text-align:justify; padding: 30px;">Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here Text Here 
+					  		Text Here Text Here Text Here Text Here Text Here</p>
+					    <p:commandButton value="Fermer" onclick="PF('barPrivacy').hide()" type="button" icon="ui-icon-arrow-1-n" />
+					</p:notificationBar>
+					<p:commandLink value="Privacy" onclick="PF('barPrivacy').show()" style="padding-right:50px;"/>
+		        </div>
+		        <div class="ui-g-12">
+		        	<h3><b><em>Copyright @2018 - Rèalisé par Randrin Nzeukang. Tous droits sont réservés.</em></b></h3>
+				</div>
+	    	</div>
+		</div>
+	</h:body>
+</html>

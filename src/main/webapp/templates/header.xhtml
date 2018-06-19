@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+	
+	<style>
+		.headerText {
+			font-weight: bold;
+		}
+		.paddingText {
+			padding-right: 35px;
+		}
+	</style>
+	<h:panelGrid columns="5" cellpadding="5" cellspacing="5">
+		<h:panelGrid columns="1" cellpadding="0" cellspacing="0">
+			<p:graphicImage name="icons/logoCMO.png" title="CMO Health" width="132"/>
+		</h:panelGrid>
+		<hr width="1" size="50"/>
+		<h:panelGrid cellpadding="0" cellspacing="5" columns="3" style="width: 100%">
+			<h:panelGrid columns="2" cellpadding="5" cellspacing="0">
+				<h:outputText value="Nome" styleClass="headerText"/>
+				<h:outputText value="#{loginBeans.admin.nomAdmin}" styleClass="paddingText"/>
+				<h:outputText value="Prènom" styleClass="headerText"/>
+				<h:outputText value="#{loginBeans.admin.prenomAdmin}" styleClass="paddingText" />
+			</h:panelGrid>
+			<h:panelGrid columns="2" cellpadding="5" cellspacing="0">
+				<h:outputText value="Sexe" styleClass="headerText"/>
+				<h:outputText value="#{loginBeans.admin.sexeAdmin}" styleClass="paddingText" />
+				<h:outputText value="Last Connexion" styleClass="headerText"/>
+				<h:outputText value="#{loginBeans.admin.dateLastUpdAdmin}" styleClass="paddingText" />
+			</h:panelGrid>
+			<h:panelGrid columns="2" cellpadding="5" cellspacing="0">
+				<h:outputText value="Spècialité" styleClass="headerText"/>
+				<h:outputText value="#{loginBeans.admin.roleAdmin}" styleClass="paddingText" />
+				<h:outputText value="Identifiant" styleClass="headerText"/>
+				<h:outputText value="#{loginBeans.idAdmin}" styleClass="paddingText" />
+			</h:panelGrid>
+		</h:panelGrid>
+		<hr width="1" size="50"/>
+		<h:panelGrid columns="5" cellpadding="5" cellspacing="0"><p:graphicImage name="icons/password.png" width="50" style="display: block; margin: 0px auto;"/>
+			<p:graphicImage name="icons/search.png" width="50" style="display: block; margin: 0px auto;"/>
+			<p:graphicImage rendered="#{loginBeans.admin.sexeAdmin == 'M'}" name="icons/manUser.png" width="50" style="display: block; margin: 0px auto;"/>
+			<p:graphicImage rendered="#{loginBeans.admin.sexeAdmin == 'F'}" name="icons/womanUser.png" width="50" style="display: block; margin: 0px auto;"/>
+			<p:graphicImage name="icons/logout.png" width="50" style="display: block; margin: 0px auto;"/>
+		</h:panelGrid>
+	</h:panelGrid>
+</html>
